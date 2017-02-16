@@ -1,0 +1,14 @@
+{
+    "data":
+    {
+        "login":true, //true,||false||fail
+        "usuario":
+        {
+            "id":1,
+            "username":"jes",
+            "nombre":"jesus",
+            "apellidos":"mercado alvarez",
+            "email":"jesus.alvarez12@outlook.com"
+        }
+    }
+}

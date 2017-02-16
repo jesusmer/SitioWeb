@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['usuario']))
+{
+      header('Location:perfil.php');
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +16,8 @@
         <h1>Universidad de Occidente</h1>
         <h3>Unidad Guasave</h3>
     </header>
-    <main>
-        <form action="#" id="login-form">
+    <main id="principal">
+        <form id="login-form" method="POST" action="login.php">
             <div class="form-control">
                 <label for="txtusuario" class="negrita">Usuario:</label>
                 <input type="text" name="txtusuario" id="txtusuario">
@@ -26,7 +32,7 @@
                </label>
            </div>
             <div class="form-control">
-                <button   onclick="login">Iniciar sesion </button>
+                <button type="submit">Iniciar sesion </button>
             </div>
            <div class="form-control">
                 <a href="" class="text-center block">¿Olvidaste la contraseña?</a>
