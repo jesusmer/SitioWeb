@@ -1,20 +1,17 @@
 <?php
-class Conexion extends mysqli_fetch
-{
-    public function __constructor()
-    {
-        
-        $host="127.0.0.1";
-        $username="root";
-        $passwd="";
-        $dbname="udom";
-        $port="3306";
-        parent:: __constructor($host,$username,$passwd,$dbname,$port);
+class Conexion extends mysqli {
+    
+    public function __construct() {
+        $host = '127.0.0.1';
+        $username = 'root';
+        $passwd = '';
+        $dbname = 'udom';
+        $port = '3306';
+        parent::__construct($host,$username,$passwd,$dbname,$port);
     }
-    public function __constructor1($host,$username,$passwd,$dbname,$port)
-    {
-       parent:: __constructor($host,$username,$passwd,$dbname,$port);
+    public function __construct1($host,$username,$passwd,$dbname,$port) {
+        parent::__construct($host,$username,$passwd,$dbname,$port);
     }
 }
-$cnn = new Conexion();
-var_dump($cnn);
+// $cnn = new Conexion();
+// var_dump($cnn);
