@@ -10,7 +10,7 @@ class Usuario {
     public static function login($username, $passwd) {
         // $datos = ['data' => ['login'=>'']];
         $cnn = new Conexion();
-        $sql = sprintf("select * from usuarios where username='%s' and passwd='%s'", $username, SHA($passwd));
+        $sql = sprintf("select * from usuarios where username='%s' and passwd='%s'", $username, md5($passwd));
         $rst = $cnn->query($sql); //$rst = mysqli_result
         $cnn->close();
         if (!$rst) {

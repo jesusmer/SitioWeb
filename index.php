@@ -11,7 +11,7 @@ if (isset($_SESSION['usuario'])) {
   <meta name="generator" content="Visual Studio Code">
   <meta name="keywords" content="udo,universidad,sistemas,computacion">
   <meta name="description" content="Sitio web de la udeo de sistemas computacionales">
-  <meta name="author" content="Bidkar Aragon Cardenas">
+  <meta name="author" content="jesus mercado alvarez">
   <title>Titulo</title>
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/style.css">

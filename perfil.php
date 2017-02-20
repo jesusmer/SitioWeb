@@ -14,7 +14,8 @@ if (!isset($_SESSION['usuario'])) {
     <title>Perfil del usuario</title>
 </head>
 <body>
-    <table>
+    
+   <!--<table>
         <thead>
             <th>Usuario</th>
             <th>Nombre</th>
@@ -30,6 +31,7 @@ if (!isset($_SESSION['usuario'])) {
             </tr>
         </tbody>
     </table>
+    -->
     <footer>
         <a href="logout.php">Cerrar sesion</a>
     </footer>
