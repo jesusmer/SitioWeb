@@ -1,5 +1,6 @@
 <?php
 class Usuario {
+    //usuario
     private $datos = [
         'id' => '',
         'username' => '',
